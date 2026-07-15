@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP.CO — Женская одежда для любого стиля</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== ШАПКА ========== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">SHOP.CO</a>
+                </div>
+
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="size-guide.html">Размерная сетка</a></li>
+                        <li><a href="contacts.html">Обратная связь</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-search">
+                    <input type="text" id="searchInput" placeholder="Поиск товаров...">
+                </div>
+
+                <div class="header-actions">
+                    <a href="cart.html" class="cart-link">🛒 <span class="cart-count" id="cartCount">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== ГЛАВНЫЙ КОНТЕНТ ========== -->
+    <main>
+
+        <!-- ГЕРОЙ -->
+        <section class="hero hero-women">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge">👗 Женская коллекция 2026</span>
+                    <h1>Найди свой стиль<br>с SHOP.CO</h1>
+                    <p>Одежда, которая подчеркивает твою индивидуальность. От повседневных образов до вечерних выходов — мы создали коллекцию для каждой женщины.</p>
+                    <a href="catalog.html" class="btn btn-primary">Смотреть товары</a>
+                    
+                    <div class="hero-stats">
+                        <div>
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Международных брендов</span>
+                        </div>
+                        <div>
+                            <span class="stat-number">2 000+</span>
+                            <span class="stat-label">Качественных товаров</span>
+                        </div>
+                        <div>
+                            <span class="stat-number">30 000+</span>
+                            <span class="stat-label">Довольных клиенток</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- НОВИНКИ -->
+        <section class="products-section">
+            <div class="container">
+                <h2 class="section-title">🔥 Новинки</h2>
+                <div class="catalog-grid" id="newArrivals">
+                    <!-- Загружается из JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ХИТЫ ПРОДАЖ -->
+        <section class="products-section">
+            <div class="container">
+                <h2 class="section-title">⭐ Хиты продаж</h2>
+                <div class="catalog-grid" id="bestSellers">
+                    <!-- Загружается из JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- СТИЛИ (КРАСИВО ОФОРМЛЕННЫЕ) -->
+        <section class="styles styles-women">
+            <div class="container">
+                <div class="styles-header">
+                    <h2 class="section-title">Выбери свой стиль</h2>
+                    <p class="styles-subtitle">Каждая женщина уникальна — найди свой образ</p>
+                </div>
+                <div class="styles-grid">
+                    <a href="catalog.html?style=casual" class="style-card style-casual">
+                        <div class="style-icon">👗</div>
+                        <h3>Повседневный</h3>
+                        <p>Уютные образы для каждого дня</p>
+                        <span class="style-arrow">→</span>
+                    </a>
+                    <a href="catalog.html?style=formal" class="style-card style-formal">
+                        <div class="style-icon">👠</div>
+                        <h3>Официальный</h3>
+                        <p>Элегантность для офиса и встреч</p>
+                        <span class="style-arrow">→</span>
+                    </a>
+                    <a href="catalog.html?style=evening" class="style-card style-evening">
+                        <div class="style-icon">✨</div>
+                        <h3>Вечерний</h3>
+                        <p>Сияй на любом мероприятии</p>
+                        <span class="style-arrow">→</span>
+                    </a>
+                    <a href="catalog.html?style=sporty" class="style-card style-sporty">
+                        <div class="style-icon">🏃‍♀️</div>
+                        <h3>Спортивный</h3>
+                        <p>Комфорт и стиль для активности</p>
+                        <span class="style-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ОТЗЫВЫ -->
+        <section class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы клиентов</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <h4>Анна С.</h4>
+                        <p>"Качество одежды превзошло мои ожидания. Платье сидит идеально, получила много комплиментов!"</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <h4>Екатерина К.</h4>
+                        <p>"Огромный выбор стильных вещей. Теперь знаю, где покупать одежду для работы и выходов."</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <h4>Мария П.</h4>
+                        <p>"Очень довольна спортивным костюмом — удобный, красивый, качество на высоте!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПОДПИСКА -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-inner">
+                    <h2>Будь в курсе наших акций и новинок</h2>
+                    <form class="newsletter-form" onsubmit="return false;">
+                        <input type="email" id="newsletterEmail" placeholder="Введи свой Email" required>
+                        <button type="submit" class="btn btn-primary" onclick="subscribeNewsletter()">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== ПОДВАЛ ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h3>SHOP.CO</h3>
+                    <p>Мы создали этот сайт, чтобы помочь тебе найти идеальные вещи для твоего стиля. Женская одежда для любого случая.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p>📞 +7 (999) 123-45-67</p>
+                    <p>✉️ info@shopco.ru</p>
+                    <p>📍 г. Москва, ул. Тверская, д. 15</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Режим работы</h4>
+                    <p>Пн-Пт: 10:00 - 21:00</p>
+                    <p>Сб-Вс: 11:00 - 19:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 SHOP.CO. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

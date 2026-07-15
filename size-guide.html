@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Размерная сетка — SHOP.CO</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">SHOP.CO</a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="size-guide.html" class="active">Размерная сетка</a></li>
+                        <li><a href="contacts.html">Обратная связь</a></li>
+                    </ul>
+                </nav>
+                <div class="header-search">
+                    <input type="text" id="searchInput" placeholder="Поиск товаров...">
+                </div>
+                <div class="header-actions">
+                    <a href="cart.html" class="cart-link">🛒 <span class="cart-count" id="cartCount">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="size-guide-page">
+            <div class="container">
+                <h1 class="page-title">Размерная сетка</h1>
+                
+                <div class="size-guide-intro">
+                    <p>Чтобы подобрать идеальный размер, измерьте обхват груди, талии и бёдер. Сравните полученные значения с нашей таблицей.</p>
+                </div>
+
+                <!-- ТАБЛИЦА РАЗМЕРОВ ДЛЯ ОДЕЖДЫ -->
+                <div class="size-table-wrapper">
+                    <h2>Таблица размеров для одежды</h2>
+                    <table class="size-table">
+                        <thead>
+                            <tr>
+                                <th>Российский размер</th>
+                                <th>Международный</th>
+                                <th>Обхват груди (см)</th>
+                                <th>Обхват талии (см)</th>
+                                <th>Обхват бёдер (см)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>44-46</td>
+                                <td>S</td>
+                                <td>86-92</td>
+                                <td>70-76</td>
+                                <td>92-98</td>
+                            </tr>
+                            <tr>
+                                <td>46-48</td>
+                                <td>M</td>
+                                <td>92-98</td>
+                                <td>76-82</td>
+                                <td>98-104</td>
+                            </tr>
+                            <tr>
+                                <td>48-50</td>
+                                <td>L</td>
+                                <td>98-104</td>
+                                <td>82-88</td>
+                                <td>104-110</td>
+                            </tr>
+                            <tr>
+                                <td>50-52</td>
+                                <td>XL</td>
+                                <td>104-110</td>
+                                <td>88-94</td>
+                                <td>110-116</td>
+                            </tr>
+                            <tr>
+                                <td>52-54</td>
+                                <td>XXL</td>
+                                <td>110-116</td>
+                                <td>94-100</td>
+                                <td>116-122</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ТАБЛИЦА ДЛЯ ДЖИНСОВ -->
+                <div class="size-table-wrapper">
+                    <h2>Таблица размеров для джинсов</h2>
+                    <table class="size-table">
+                        <thead>
+                            <tr>
+                                <th>Международный</th>
+                                <th>Обхват талии (см)</th>
+                                <th>Длина по внутреннему шву (см)</th>
+                                <th>Российский размер</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>S</td>
+                                <td>71-76</td>
+                                <td>76-81</td>
+                                <td>44-46</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>76-81</td>
+                                <td>81-86</td>
+                                <td>46-48</td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>81-86</td>
+                                <td>86-91</td>
+                                <td>48-50</td>
+                            </tr>
+                            <tr>
+                                <td>XL</td>
+                                <td>86-91</td>
+                                <td>91-96</td>
+                                <td>50-52</td>
+                            </tr>
+                            <tr>
+                                <td>XXL</td>
+                                <td>91-97</td>
+                                <td>96-101</td>
+                                <td>52-54</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- ТАБЛИЦА ДЛЯ БЛУЗОК И ЖАКЕТОВ -->
+                <div class="size-table-wrapper">
+                    <h2>Таблица размеров для блузок и жакетов</h2>
+                    <table class="size-table">
+                        <thead>
+                            <tr>
+                                <th>Международный</th>
+                                <th>Обхват груди (см)</th>
+                                <th>Обхват талии (см)</th>
+                                <th>Обхват бёдер (см)</th>
+                                <th>Российский размер</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>XS</td>
+                                <td>80-84</td>
+                                <td>60-64</td>
+                                <td>86-90</td>
+                                <td>40-42</td>
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                                <td>84-88</td>
+                                <td>64-68</td>
+                                <td>90-94</td>
+                                <td>42-44</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>88-92</td>
+                                <td>68-72</td>
+                                <td>94-98</td>
+                                <td>44-46</td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>92-96</td>
+                                <td>72-76</td>
+                                <td>98-102</td>
+                                <td>46-48</td>
+                            </tr>
+                            <tr>
+                                <td>XL</td>
+                                <td>96-100</td>
+                                <td>76-80</td>
+                                <td>102-106</td>
+                                <td>48-50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ТАБЛИЦА ДЛЯ ПЛАТЬЕВ -->
+                <div class="size-table-wrapper">
+                    <h2>Таблица размеров для платьев</h2>
+                    <table class="size-table">
+                        <thead>
+                            <tr>
+                                <th>Международный</th>
+                                <th>Обхват груди (см)</th>
+                                <th>Обхват талии (см)</th>
+                                <th>Обхват бёдер (см)</th>
+                                <th>Российский размер</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>XS</td>
+                                <td>78-82</td>
+                                <td>58-62</td>
+                                <td>84-88</td>
+                                <td>40-42</td>
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                                <td>82-86</td>
+                                <td>62-66</td>
+                                <td>88-92</td>
+                                <td>42-44</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>86-90</td>
+                                <td>66-70</td>
+                                <td>92-96</td>
+                                <td>44-46</td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>90-94</td>
+                                <td>70-74</td>
+                                <td>96-100</td>
+                                <td>46-48</td>
+                            </tr>
+                            <tr>
+                                <td>XL</td>
+                                <td>94-98</td>
+                                <td>74-78</td>
+                                <td>100-104</td>
+                                <td>48-50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- КАК СНЯТЬ МЕРКИ -->
+                <div class="size-guide-tips">
+                    <h2>Как правильно снять мерки</h2>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <div class="tip-icon">📏</div>
+                            <h4>Обхват груди</h4>
+                            <p>Измерьте по самым выступающим точкам груди. Сантиметровая лента должна проходить горизонтально.</p>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon">📐</div>
+                            <h4>Обхват талии</h4>
+                            <p>Измерьте по самой узкой части талии, чуть выше пупка. Не затягивайте ленту слишком туго.</p>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon">📊</div>
+                            <h4>Обхват бёдер</h4>
+                            <p>Измерьте по самым выступающим точкам ягодиц. Лента должна проходить горизонтально.</p>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon">📝</div>
+                            <h4>Сравните с таблицей</h4>
+                            <p>Сопоставьте свои мерки с таблицей выше. Если параметры между размерами — выбирайте больший.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ТАБЛИЦА СООТВЕТСТВИЯ БРЕНДОВ -->
+                <div class="size-table-wrapper">
+                    <h2>Соответствие размеров брендов</h2>
+                    <table class="size-table">
+                        <thead>
+                            <tr>
+                                <th>Размер</th>
+                                <th>VERSACE</th>
+                                <th>ARMANI</th>
+                                <th>GUCCI</th>
+                                <th>PRADA</th>
+                                <th>Calvin Klein</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>S</td>
+                                <td>46</td>
+                                <td>46</td>
+                                <td>44</td>
+                                <td>46</td>
+                                <td>S</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>48</td>
+                                <td>48</td>
+                                <td>46</td>
+                                <td>48</td>
+                                <td>M</td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>48</td>
+                                <td>50</td>
+                                <td>L</td>
+                            </tr>
+                            <tr>
+                                <td>XL</td>
+                                <td>52</td>
+                                <td>52</td>
+                                <td>50</td>
+                                <td>52</td>
+                                <td>XL</td>
+                            </tr>
+                            <tr>
+                                <td>XXL</td>
+                                <td>54</td>
+                                <td>54</td>
+                                <td>52</td>
+                                <td>54</td>
+                                <td>XXL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="size-guide-note">
+                    <p>💡 Если вы сомневаетесь в выборе размера, напишите нам в <a href="contacts.html">обратную связь</a> — мы поможем подобрать идеальный размер!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПОДПИСКА -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-inner">
+                    <h2>Будь в курсе наших акций и новинок</h2>
+                    <form class="newsletter-form" onsubmit="return false;">
+                        <input type="email" id="newsletterEmail" placeholder="Введи свой Email" required>
+                        <button type="submit" class="btn btn-primary" onclick="subscribeNewsletter()">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h3>SHOP.CO</h3>
+                    <p>Мы создали этот сайт, чтобы помочь тебе найти идеальные вещи для твоего стиля.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Особенности</a></li>
+                        <li><a href="#">Карьера</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="#">Поддержка</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Условия</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Частые вопросы</h4>
+                    <ul>
+                        <li><a href="#">Аккаунт</a></li>
+                        <li><a href="#">Заказы</a></li>
+                        <li><a href="#">Оплата</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 SHOP.CO. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

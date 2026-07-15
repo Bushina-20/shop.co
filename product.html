@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар — SHOP.CO</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">SHOP.CO</a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="size-guide.html">Размерная сетка</a></li>
+                        <li><a href="contacts.html">Обратная связь</a></li>
+                    </ul>
+                </nav>
+                <div class="header-search">
+                    <input type="text" id="searchInput" placeholder="Поиск товаров...">
+                </div>
+                <div class="header-actions">
+                    <a href="cart.html" class="cart-link">🛒 <span class="cart-count" id="cartCount">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-detail-page">
+            <div class="container">
+                <!-- ХЛЕБНЫЕ КРОШКИ -->
+                <div class="breadcrumbs">
+                    <a href="index.html">Главная</a> / 
+                    <a href="catalog.html">Каталог</a> / 
+                    <span id="productBreadcrumb">Товар</span>
+                </div>
+
+                <div class="product-detail" id="productDetail">
+                    <!-- Загружается из JS -->
+                </div>
+
+                <!-- РЕКОМЕНДАЦИИ -->
+                <section class="products-section">
+                    <h2 class="section-title">Вам также может понравиться</h2>
+                    <div class="catalog-grid" id="recommendations">
+                        <!-- Загружается из JS -->
+                    </div>
+                </section>
+
+                <!-- ПОДПИСКА -->
+                <section class="newsletter">
+                    <div class="container">
+                        <div class="newsletter-inner">
+                            <h2>Будь в курсе наших акций и новинок</h2>
+                            <form class="newsletter-form" onsubmit="return false;">
+                                <input type="email" id="newsletterEmail" placeholder="Введи свой Email" required>
+                                <button type="submit" class="btn btn-primary" onclick="subscribeNewsletter()">Подписаться</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h3>SHOP.CO</h3>
+                    <p>Мы создали этот сайт, чтобы помочь тебе найти идеальные вещи для твоего стиля.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Особенности</a></li>
+                        <li><a href="#">Карьера</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="#">Поддержка</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Условия</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Частые вопросы</h4>
+                    <ul>
+                        <li><a href="#">Аккаунт</a></li>
+                        <li><a href="#">Заказы</a></li>
+                        <li><a href="#">Оплата</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 SHOP.CO. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

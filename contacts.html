@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь — SHOP.CO</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">SHOP.CO</a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="size-guide.html">Размерная сетка</a></li>
+                        <li><a href="contacts.html" class="active">Обратная связь</a></li>
+                    </ul>
+                </nav>
+                <div class="header-search">
+                    <input type="text" id="searchInput" placeholder="Поиск товаров...">
+                </div>
+                <div class="header-actions">
+                    <a href="cart.html" class="cart-link">🛒 <span class="cart-count" id="cartCount">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contacts-page">
+            <div class="container">
+                <h1 class="page-title">Обратная связь</h1>
+
+                <div class="contacts-grid">
+                    <!-- ИНФОРМАЦИЯ -->
+                    <div class="contacts-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Адрес</h4>
+                                <p>г. Москва, ул. Тверская, д. 15</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Телефон</h4>
+                                <p>+7 (999) 123-45-67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@shopco.ru</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div>
+                                <h4>Режим работы</h4>
+                                <p>Пн-Пт: 10:00 - 21:00</p>
+                                <p>Сб-Вс: 11:00 - 19:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ФОРМА -->
+                    <div class="contacts-form">
+                        <h2>Напишите нам</h2>
+                        <form class="feedback-form" onsubmit="return false;">
+                            <div class="form-group">
+                                <label>Ваше имя *</label>
+                                <input type="text" id="feedbackName" placeholder="Иван Иванов" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Ваш Email *</label>
+                                <input type="email" id="feedbackEmail" placeholder="ivan@mail.ru" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Тема обращения</label>
+                                <select id="feedbackSubject">
+                                    <option>Вопрос о товаре</option>
+                                    <option>Доставка</option>
+                                    <option>Возврат</option>
+                                    <option>Сотрудничество</option>
+                                    <option>Другое</option>
+                                </select>
+                            </div>
+                            <div class="form-group full-width">
+                                <label>Сообщение *</label>
+                                <textarea id="feedbackMessage" rows="5" placeholder="Опишите ваш вопрос..." required></textarea>
+                            </div>
+                            <div class="form-group full-width">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="feedbackAgree" required>
+                                    Я согласен на обработку персональных данных
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-large" onclick="sendFeedback()">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПОДПИСКА -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-inner">
+                    <h2>Будь в курсе наших акций и новинок</h2>
+                    <form class="newsletter-form" onsubmit="return false;">
+                        <input type="email" id="newsletterEmail" placeholder="Введи свой Email" required>
+                        <button type="submit" class="btn btn-primary" onclick="subscribeNewsletter()">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h3>SHOP.CO</h3>
+                    <p>Мы создали этот сайт, чтобы помочь тебе найти идеальные вещи для твоего стиля.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Особенности</a></li>
+                        <li><a href="#">Карьера</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="#">Поддержка</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Условия</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Частые вопросы</h4>
+                    <ul>
+                        <li><a href="#">Аккаунт</a></li>
+                        <li><a href="#">Заказы</a></li>
+                        <li><a href="#">Оплата</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 SHOP.CO. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
