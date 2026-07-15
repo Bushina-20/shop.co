@@ -222,7 +222,7 @@ img {
 }
 
 /* =========================================
-   ТОВАРЫ (сетка)
+   ТОВАРЫ (сетка) — ГЛАВНОЕ!
    ========================================= */
 .products-section {
     padding: 50px 0;
@@ -257,11 +257,12 @@ img {
     box-shadow: 0 8px 30px rgba(0,0,0,0.1);
 }
 
+/* ===== КАРТИНКИ В КАРТОЧКАХ — ПРАВИЛЬНЫЙ РАЗМЕР ===== */
 .product-card img {
     border-radius: 10px;
     margin-bottom: 10px;
     width: 100%;
-    height: 250px;
+    height: 280px;
     object-fit: cover;
     background: #f0f0f0;
 }
@@ -269,6 +270,7 @@ img {
 .product-card h3 {
     font-size: 15px;
     margin-bottom: 5px;
+    min-height: 40px;
 }
 
 .rating {
@@ -1132,7 +1134,7 @@ img {
 }
 
 /* =========================================
-   АДАПТИВНОСТЬ (ОСНОВНАЯ)
+   АДАПТИВНОСТЬ
    ========================================= */
 
 @media (max-width: 992px) {
@@ -1257,36 +1259,36 @@ img {
         padding: 20px;
     }
 
-    /* ===== ГЛАВНОЕ: КАРТИНКИ НА ТЕЛЕФОНЕ ===== */
+    /* ===== ГЛАВНОЕ: КАРТИНКИ НА ТЕЛЕФОНЕ — ПОЛНОСТЬЮ ВИДНЫ ===== */
     .product-card img {
-        height: auto !important;
-        max-height: 300px !important;
+        height: 280px !important;
         width: 100% !important;
         object-fit: cover !important;
+        display: block !important;
     }
 
     .product-detail-image img {
-        height: auto !important;
-        max-height: 350px !important;
+        height: 350px !important;
         width: 100% !important;
         object-fit: cover !important;
+        display: block !important;
     }
 
     .cart-item img {
-        width: 60px !important;
-        height: 60px !important;
+        width: 70px !important;
+        height: 70px !important;
+        object-fit: cover !important;
         flex-shrink: 0 !important;
     }
 }
 
-/* Планшеты */
 @media (min-width: 576px) and (max-width: 992px) {
     .catalog-grid {
         grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .product-card img {
-        height: 250px !important;
+        height: 280px !important;
         width: 100% !important;
         object-fit: cover !important;
     }
