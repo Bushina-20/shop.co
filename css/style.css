@@ -1288,3 +1288,25 @@ img {
         grid-template-columns: repeat(5, 1fr);
     }
 }
+
+.footer-simple {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-col-full {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-col-full h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.footer-col-full p {
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+    line-height: 1.6;
+}
